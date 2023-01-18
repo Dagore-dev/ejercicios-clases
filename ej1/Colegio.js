@@ -1,3 +1,6 @@
+// eslint-disable-next-line
+import Alumno from './Alumno.js'
+
 export default class Colegio {
   /** @type {string} */
   #nombre
@@ -6,6 +9,11 @@ export default class Colegio {
   /** @type {Alumno[]} */
   #alumnos
 
+  /**
+   * @param {string} nombre
+   * @param {string} numeroAulas
+   * @param  {Alumno[]} alumnos
+   */
   constructor (nombre, numeroAulas, ...alumnos) {
     this.#nombre = nombre
     this.#numeroAulas = numeroAulas
